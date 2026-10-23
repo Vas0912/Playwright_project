@@ -9,7 +9,7 @@ import { trace } from 'node:console';
 const config = ({
   testDir: './tests',
   testMatch: '**/*.spec.js',
-  retries :0,
+  retries :2,
   timeout:30*1000,
   expect:{
     timeout: 5000,
@@ -21,7 +21,9 @@ const config = ({
     browserName: 'chromium',
     headless: true,
     screenshot : 'on',
-    trace : 'retain-on-failure',
+    trace : 'on',
+    //...devices['iPhone 14 Pro Max']
+    // viewport:{Width:720,Height:720}
     // if mention headless: true **the browser will not open**
   },
 

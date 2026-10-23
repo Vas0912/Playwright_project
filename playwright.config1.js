@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import { worker } from 'node:cluster';
 import { trace } from 'node:console';
 
 
@@ -9,7 +10,8 @@ import { trace } from 'node:console';
 const config = ({
   testDir: './tests',
   testMatch: '**/*.spec.js',
-  retries :0,
+  retries :1,
+  worker : 1,
   timeout:30*1000,
   expect:{
     timeout: 5000,
