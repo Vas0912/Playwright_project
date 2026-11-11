@@ -4,7 +4,7 @@
 
 This repository contains my personal Playwright Automation Framework developed using JavaScript and Playwright Test.
 
-The project demonstrates my practical knowledge of UI automation, API testing, Page Object Model (POM), test execution, and automation framework development.
+The project demonstrates my practical knowledge of UI automation, Page Object Model (POM), test execution, and automation framework development.
 
 The framework is created as a hands-on portfolio project to demonstrate real-world automation testing concepts and best practices.
 
@@ -13,7 +13,7 @@ The framework is created as a hands-on portfolio project to demonstrate real-wor
 | Technology | Purpose |
 |---|---|
 | JavaScript | Programming language |
-| Playwright | UI and API automation |
+| Playwright | UI automation |
 | Playwright Test | Test execution framework |
 | Page Object Model | Framework design pattern |
 | Allure Playwright | Test reporting integration |
@@ -30,7 +30,7 @@ Playwright_project/
 │
 ├── pageobjects/         # Page Object Model classes
 │
-├── tests/               # UI and API test scripts
+├── tests/               # UI test scripts
 │
 ├── utils/               # Reusable utility files
 │
@@ -61,14 +61,9 @@ Playwright_project/
 - Test hooks and fixtures.
 - Playwright configuration.
 
-### API Automation
-- API testing using Playwright request context.
-- API test execution using tagged tests.
-- Separate execution of API and UI test suites.
-
 ### Test Execution and Reporting
 - Regression test execution.
-- Tagged test execution using `@Web` and `@API`.
+- Tagged test execution using `@Web`.
 - Safari browser project configuration.
 - Allure Playwright integration.
 - Playwright HTML reporting.
@@ -111,12 +106,6 @@ npm run regression
 
 ```bash
 npm run webTests
-```
-
-**Run API automation tests**
-
-```bash
-npm run APITests
 ```
 
 **Run tests using Safari configuration**
